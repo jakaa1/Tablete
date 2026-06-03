@@ -115,11 +115,10 @@ body {
   --rot: 8deg;
 }
 
-/* spi — middle-RIGHT, peeks out right */
+/* spi — top-RIGHT, peeks above */
 .polaroid-2 {
-  top: 50%;
-  right: -34px;
-  margin-top: -130px;
+  top: -210px;
+  right: -22px;
   transform: rotate(11deg);
   animation-delay: 2.5s;
   --rot: 11deg;
@@ -138,7 +137,7 @@ body {
   .polaroid { padding: 8px 8px 28px; }
   .polaroid-1 { top: -185px; left: -14px; }
   .polaroid-3 { bottom: -195px; left: -14px; }
-  .polaroid-2 { right: -22px; margin-top: -110px; }
+  .polaroid-2 { top: -185px; right: -14px; }
 }
 
 @media (max-width: 360px) {
@@ -147,7 +146,7 @@ body {
   .polaroid-caption { font-size: 17px; }
   .polaroid-1 { top: -160px; left: -10px; }
   .polaroid-3 { bottom: -170px; left: -10px; }
-  .polaroid-2 { right: -16px; margin-top: -95px; }
+  .polaroid-2 { top: -160px; right: -10px; }
 }
 
 /* Hide some decorative SVG bits so they don't crowd */

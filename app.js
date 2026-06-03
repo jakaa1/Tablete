@@ -87,13 +87,13 @@ function renderToday() {
   const taken = isTaken(key);
 
   if (taken) {
-    statusBadgeEl.textContent = "🌸";
-    statusTextEl.textContent = "Bravo! Vzela si jo danes 💕";
+    statusBadgeEl.textContent = "🐐";
+    statusTextEl.textContent = "Pridna, my goat 💕";
     btnTaken.classList.add("done");
     statusPhotoEl.classList.add("done");
   } else {
     statusBadgeEl.textContent = "💖";
-    statusTextEl.textContent = "Ali si že vzela tableto?";
+    statusTextEl.textContent = "Si že vzela?";
     btnTaken.classList.remove("done");
     statusPhotoEl.classList.remove("done");
   }
@@ -101,8 +101,8 @@ function renderToday() {
 }
 
 function renderStats() {
-  streakEl.textContent = computeStreak();
-  totalTakenEl.textContent = computeTotal();
+  if (streakEl) streakEl.textContent = computeStreak();
+  if (totalTakenEl) totalTakenEl.textContent = computeTotal();
 }
 
 function renderCalendar() {
